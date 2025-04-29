@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hot Topic - Gossip Girl</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Open+Sans:wght@300;400&family=Raleway:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>hot topic</h1>
+    </header>
+
+    <nav class="left-menu">
+        <ul>
+            <li><a href="index.html" class="blue">home</a></li>
+            <li><a href="drama.html" class="yellow">drama</a></li>
+            <li><a href="relationships.html" class="green">relationships</a></li>
+            <li><a href="breakups.html" class="purple">breakups</a></li>
+            <li><a href="cheaters.html" class="red">cheaters</a></li>
+            <li><a href="bestie.html" class="pink">bestie drama</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <section id="submit-topic" class="topic-submission" style="display: none;">
+            <h2>Post Hot Topic</h2>
+            <form id="topicForm">
+                <input type="text" placeholder="Topic Title" id="topicTitle" required>
+                <textarea placeholder="Write your hot topic here..." id="topicContent" required></textarea>
+                <button type="submit" class="glow-button">Post as Gossip Girl</button>
+            </form>
+        </section>
+
+        <section id="hot-topics" class="hot-topics">
+            <h2>Latest Hot Topics</h2>
+            <div id="hotTopicContainer"></div>
+        </section>
+    </main>
+
+    <script src="hot-topic.js"></script>
+</body>
+</html>

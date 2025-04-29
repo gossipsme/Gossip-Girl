@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gossip Girl</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Open+Sans:wght@300;400&family=Raleway:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1 id="pageTitle">gossip girl</h1>
+    </header>
+
+    <nav class="left-menu">
+        <ul>
+            <li><a href="#home" class="blue" onclick="showPage('home')">home</a></li>
+            <li><a href="drama.html" class="yellow">drama</a></li>
+            <li><a href="relationships.html" class="green">relationships</a></li>
+            <li><a href="breakups.html" class="purple">breakups</a></li>
+            <li><a href="cheaters.html" class="red">cheaters</a></li>
+            <li><a href="bestie.html" class="pink">bestie drama</a></li>
+            <li><a href="screenshots.html" class="blue">screenshots</a></li>
+            <li><a href="#hot-topic" class="yellow" onclick="showPage('hot-topic')">hot topic</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <div id="homePage">
+            <section id="about-us">
+                <h2>About Us</h2>
+                <p>JUST YOUR DAILY DRAMA UPDATER</p>
+                <p class="warning">ps. No bullshit allowed, we need proofs, if not so, we shall take measures.</p>
+            </section>
+
+            <section id="welcome">
+                <h2>Welcome</h2>
+                <p>Welcome to Gossip Girl RHPS, here we gossip</p>
+                <p class="subtitle">The gossip channel of the RHPS! Drop anything from all sections and classes!</p>
+            </section>
+        </div>
+
+        <div id="contentPage" style="display: none;">
+            <section id="submit-gossip" class="gossip-submission">
+                <h2>Share Your Tea</h2>
+                <form id="gossipForm">
+                    <textarea id="gossipContent" placeholder="Spill your anonymous tea here..." required></textarea>
+                    <button type="submit" class="glow-button">Submit Anonymously</button>
+                </form>
+            </section>
+
+            <section id="screenshot-upload" class="screenshot-submission" style="display: none;">
+                <h2>Share Screenshot</h2>
+                <form id="screenshotForm">
+                    <input type="file" id="screenshotUpload" accept="image/*" required>
+                    <textarea id="screenshotCaption" placeholder="Add a caption (optional)"></textarea>
+                    <button type="submit" class="glow-button">Submit Screenshot</button>
+                </form>
+            </section>
+
+            <section id="hot-topic-section" class="topic-submission" style="display: none;">
+                <h2>Post Hot Topic</h2>
+                <form id="topicForm">
+                    <input type="text" placeholder="Topic Title" id="topicTitle" required>
+                    <textarea placeholder="Write your hot topic here..." id="topicContent" required></textarea>
+                    <button type="submit" class="glow-button">Post as Gossip Girl</button>
+                </form>
+            </section>
+
+            <section id="feed-section">
+                <h2 id="feedTitle">Latest Tea</h2>
+                <div id="contentContainer"></div>
+            </section>
+        </div>
+    </main>
+
+    <script src="gossip.js"></script>
+    <script src="hot-topic.js"></script>
+    <script src="screenshots.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

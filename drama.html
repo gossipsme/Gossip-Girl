@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drama - Gossip Girl</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Open+Sans:wght@300;400&family=Raleway:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>shh... drama tea?</h1>
+    </header>
+
+    <nav class="left-menu">
+        <ul>
+            <li><a href="index.html" class="blue">home</a></li>
+            <li><a href="gossip.html?category=drama" class="yellow">drama</a></li>
+            <li><a href="gossip.html?category=relationships" class="green">relationships</a></li>
+            <li><a href="gossip.html?category=breakups" class="purple">breakups</a></li>
+            <li><a href="gossip.html?category=cheaters" class="red">cheaters</a></li>
+            <li><a href="gossip.html?category=bestie" class="pink">bestie drama</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <section id="submit-gossip" class="gossip-submission">
+            <h2>Share Your Tea</h2>
+            <form id="gossipForm">
+                <textarea placeholder="Spill your anonymous drama tea here..." required></textarea>
+                <button type="submit" class="glow-button">Submit Anonymously</button>
+            </form>
+        </section>
+
+        <section id="gossip-feed" class="gossip-feed">
+            <h2>Latest Drama Tea</h2>
+            <div id="gossipContainer"></div>
+        </section>
+    </main>
+
+    <script src="gossip.js"></script>
+</body>
+</html>

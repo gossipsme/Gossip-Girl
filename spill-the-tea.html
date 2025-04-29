@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spill the Tea - Gossip Girl</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Open+Sans:wght@300;400&family=Raleway:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>shh... spill the tea</h1>
+    </header>
+
+    <nav class="left-menu">
+        <ul>
+            <li><a href="index.html" class="blue">home</a></li>
+            <li><a href="drama.html" class="yellow">drama</a></li>
+            <li><a href="relationships.html" class="green">relationships</a></li>
+            <li><a href="breakups.html" class="purple">breakups</a></li>
+            <li><a href="cheaters.html" class="red">cheaters</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <section id="spill" class="tea-submission">
+            <h2>Spill Your Tea</h2>
+            <form id="teaForm">
+                <textarea placeholder="Spill your anonymous tea here..." required></textarea>
+                <button type="submit" class="glow-button">Submit Anonymously</button>
+            </form>
+        </section>
+
+        <section id="feed" class="tea-feed">
+            <h2>Latest Tea</h2>
+            <div id="teaContainer"></div>
+        </section>
+    </main>
+
+    <script src="tea.js"></script>
+</body>
+</html>
